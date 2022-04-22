@@ -1,0 +1,26 @@
+version: "3"
+services:
+  flask_app:
+    container_name: Backend
+    build: ./Backend
+    ports:
+      - "5001:5000"
+    links:
+      - db
+
+  db:
+    container_name: mongo
+    hostname: card_mongodb
+    image: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=cards
+    volumes:
+      - ./db-init.js:/docker-entrypoint-initdb.d/db-init.js:ro
+    ports: 
+      - "27017:27017"
+  
+  vue_app:
+    container_name: Frontend
+    build: ./Frontend
+    ports:
+      - "8080:80"
