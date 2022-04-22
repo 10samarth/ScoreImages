@@ -43,3 +43,5 @@ docker-compose up
 * Website: https://10samarth.com
 
 * Github: [@10Samarth](https://github.com/10Samarth)
+
+* LinkedIn: https://www.linkedin.com/in/samarthmg/
