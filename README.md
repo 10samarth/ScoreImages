@@ -1,10 +1,11 @@
 
+
   
 
 <h1  align="center">Welcome to Score Images 👋</h1>
 
-
-> The page has four static photos, and for each, a +1 and -1 button increases and decreases the score. This score persists in a database so that when a new user visits, they see the latest score. The stack used in Vue/Flask/MongoDB. Use Docker for running the code.
+Score image is a web app developed using Vue, Flask and MongoDB.
+> The page has four static photos, and for each, a +1 and -1 button increases and decreases the score. This score persists in a database so that when a new user visits, they see the latest score. Docker is used for deploying and running the code.
 
 ![screenshot](https://i.imgur.com/3AZu7DD.png)
 
