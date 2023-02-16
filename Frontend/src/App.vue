@@ -1,5 +1,7 @@
 <template >
+  
   <div v-if="cards">
+    <h1>Vote your favourite framework!</h1>
     <div>
       <Card :cards="cards[0]" v-if="cards[0]"></Card>
       <Card :cards="cards[1]" v-if="cards[1]"></Card>
